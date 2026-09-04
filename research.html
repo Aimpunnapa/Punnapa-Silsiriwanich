@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Stock Research - InvestSmart</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="logo">
+        📈 InvestSmart
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="learning.html">
+            Learning Center
+        </a>
+
+        <a href="tools.html">
+            Tools & Tracker
+        </a>
+
+        <a href="news.html">
+            Market & News
+        </a>
+
+        <a href="research.html">
+            Stock Research
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <h1>
+        🔍 Stock Research & Analysis
+    </h1>
+
+    <p class="subtitle">
+
+        Research companies and understand financial information
+        using beginner-friendly explanations.
+
+    </p>
+
+
+    <div class="search-box">
+
+        <input
+            id="stockSearch"
+            type="text"
+            placeholder="Search stock e.g. AAPL"
+        >
+
+        <button
+            class="btn"
+            onclick="searchStock()"
+        >
+            Search
+        </button>
+
+    </div>
+
+
+    <div id="stockResult">
+
+
+        <!-- Stock Header -->
+
+        <div class="stock-header">
+
+            <h2>
+                Apple Inc. (AAPL)
+            </h2>
+
+            <p class="stock-industry">
+                Technology
+            </p>
+
+            <div class="stock-price">
+                $224.80
+            </div>
+
+            <p class="stock-positive">
+                ▲ +1.24%
+            </p>
+
+        </div>
+
+
+        <!-- Key Information -->
+
+        <div class="grid">
+
+
+            <div class="card">
+
+                <h3>
+                    Market Capitalization
+                </h3>
+
+                <h2>
+                    $3.4T
+                </h2>
+
+                <p>฿111.92T</p>
+
+                <p>
+                    The total market value of all outstanding
+                    company shares.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    PE Ratio
+                </h3>
+
+                <h2>
+                    32.5
+                </h2>
+
+                <p>
+                    Investors are paying approximately 32.5 times
+                    the company's earnings.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Dividend Yield
+                </h3>
+
+                <h2>
+                    0.45%
+                </h2>
+
+                <p>
+                    Shows the annual dividend relative to
+                    the stock price.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Financial Health
+                </h3>
+
+                <h2 class="positive">
+                    Strong
+                </h2>
+
+                <p>
+                    Consistent earnings and substantial
+                    cash reserves.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Fundamental Analysis -->
+
+        <h2 class="section-title">
+            Educational Analysis
+        </h2>
+
+
+        <div class="grid">
+
+
+            <div class="card">
+
+                <h3>
+                    🟢 Key Strengths
+                </h3>
+
+                <p>
+                    • Strong global brand
+                    <br>
+                    • Consistent profits
+                    <br>
+                    • Large cash reserves
+                    <br>
+                    • Growing services business
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    🔴 Potential Risks
+                </h3>
+
+                <p>
+                    • Slowing smartphone demand
+                    <br>
+                    • Increasing competition
+                    <br>
+                    • Regulatory challenges
+                    <br>
+                    • High valuation expectations
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    ⚖️ Educational View
+                </h3>
+
+                <h2>
+                    Neutral
+                </h2>
+
+                <p>
+                    The company has strong financial characteristics,
+                    but investors should consider valuation,
+                    competition, and future growth expectations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Technical Analysis -->
+
+        <h2 class="section-title">
+            📉 Technical Analysis
+        </h2>
+
+
+        <div class="grid">
+
+
+            <div class="card">
+
+                <h3>
+                    Support
+                </h3>
+
+                <h2>
+                    $210
+                </h2>
+
+                <p>฿6,912.67</p>
+
+                <p>
+                    A price level where buying interest
+                    has historically increased.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Resistance
+                </h3>
+
+                <h2>
+                    $235
+                </h2>
+
+                <p>฿7,735.61</p>
+
+                <p>
+                    A price level where selling pressure
+                    has historically increased.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    RSI
+                </h3>
+
+                <h2>
+                    58
+                </h2>
+
+                <p>
+                    RSI helps indicate whether a stock
+                    may be overbought or oversold.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Trend
+                </h3>
+
+                <h2 class="positive">
+                    Bullish
+                </h2>
+
+                <p>
+                    The recent price trend is moving upward.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Disclaimer -->
+
+        <div class="disclaimer">
+
+            <strong>
+                ⚠️ Educational Information
+            </strong>
+
+            <p>
+                InvestSmart does not provide direct Buy or Sell
+                recommendations. The information shown is intended
+                for educational purposes and should not be considered
+                financial advice.
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 InvestSmart
+    </p>
+
+    <p>
+        Educational purposes only. Not financial advice.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
