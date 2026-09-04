@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Investment Tools - InvestSmart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">📈 InvestSmart</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="learning.html">Learning Center</a>
+        <a href="tools.html">Tools & Tracker</a>
+        <a href="news.html">Market & News</a>
+        <a href="research.html">Stock Research</a>
+    </nav>
+
+</header>
+
+
+<main class="toolspage">
+
+    <h1 class="Inh1">🧮 Investment Tools & Personal Tracker</h1>
+
+    <p class="toolssubtitle">
+        Use simple calculators and tracking tools to plan
+        your investment journey.
+    </p>
+
+
+    <div class="grid">
+
+        <!-- Calculator -->
+
+        <div class="calculator">
+
+            <h2>Compound Interest Calculator</h2>
+
+            <label for="initial">
+                Initial Investment
+            </label>
+
+            <input
+                id="initial"
+                type="number"
+                value="1000"
+            >
+
+
+            <label for="monthly">
+                Monthly Contribution
+            </label>
+
+            <input
+                id="monthly"
+                type="number"
+                value="200"
+            >
+
+
+            <label for="rate">
+                Annual Return (%)
+            </label>
+
+            <input
+                id="rate"
+                type="number"
+                value="8"
+            >
+
+
+            <label for="years">
+                Investment Period (Years)
+            </label>
+
+            <input
+                id="years"
+                type="number"
+                value="10"
+            >
+
+
+            <button
+                class="btn"
+                onclick="calculateInvestment()"
+            >
+                Calculate
+            </button>
+
+
+            <div id="result" class="result">
+                Your result will appear here.
+            </div>
+
+        </div>
+
+
+        <!-- Watchlist -->
+
+        <div class="MYwatch">
+
+            <h2>⭐ My Watchlist</h2>
+
+            <div class="indicator">
+                <strong>AAPL</strong>
+                <span class="positive"> +1.24%</span>
+            </div>
+
+            <div class="indicator">
+                <strong>NVDA</strong>
+                <span class="positive"> +2.31%</span>
+            </div>
+
+            <div class="indicator">
+                <strong>TSLA</strong>
+                <span class="negative"> -0.83%</span>
+            </div>
+
+            <button class="btn">
+                Add Stock
+            </button>
+
+        </div>
+
+
+        <!-- Investment Goal -->
+
+        <div class="IG">
+
+            <h2>🎯 Investment Goal</h2>
+
+            <p>
+                Goal: Save $50,000 (฿1,644,750.00)
+            </p>
+
+            <div class="progress">
+
+                <div
+                    class="progress-bar"
+                    style="width:42%;"
+                ></div>
+
+            </div>
+
+            <p class="progress-text">
+                $21,000 (฿690,795) / $50,000 (฿1,644,750)
+            </p>
+
+            <button class="btn">
+                Update Goal
+            </button>
+
+        </div>
+
+
+        <!-- DCA -->
+
+        <div class="DCA">
+
+            <h2>📅 Dollar-Cost Averaging</h2>
+
+            <p>
+                Dollar-cost averaging means investing a fixed
+                amount regularly instead of trying to predict
+                the perfect time to invest.
+            </p>
+
+            <button class="btn">
+                Open Calculator
+            </button>
+
+        </div>
+
+
+        <!-- Dividend -->
+
+        <div class="DVD">
+
+            <h2>💰 Dividend Calculator</h2>
+
+            <p>
+                Estimate potential annual dividend income
+                based on your investment amount and dividend yield.
+            </p>
+
+            <button class="btn">
+                Open Calculator
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>© 2026 InvestSmart</p>
+    <p>Educational purposes only. Not financial advice.</p>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
