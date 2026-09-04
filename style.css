@@ -1,0 +1,651 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.Inh1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #d1dfff;
+}
+
+h2 {
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.7;
+    color: #64748b;
+}
+
+
+.subtitle {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.toolssubtitle {
+    max-width: 700px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+header {
+    background: linear-gradient(to right, #00076b, #095d8d);
+    color: white;
+    padding: 18px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    background:
+        url("AdobeStock_73920831-1024x768.webp");
+
+    color: white;
+
+    padding: 70px 7%;
+
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-content {
+    max-width: 750px;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 48px;
+}
+
+
+.hero p {
+    color: black;
+    font-size: 18px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+    padding: 50px 7%;
+    min-height: 75vh;
+}
+
+
+.section-title {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.toolspage {
+    padding: 50px 7%;
+    min-height: 75vh;
+    background:
+    url("https://as2.ftcdn.net/v2/jpg/06/95/05/41/1000_F_695054102_xYJw64qlh1SC07SjEuPe5wACrSbRJOXu.jpg");
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    margin-top: 15px;
+}
+
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(220px, 1fr)
+        );
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(15, 23, 42, 0.08);
+}
+
+
+.market-card {
+    border-left: 5px solid #2563eb;
+}
+
+.APcard{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border-left: red solid;
+}
+
+.NVcard{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border-left: rgb(71, 182, 19) solid;
+}
+
+.TScard{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border-left: rgb(0, 2, 37) solid;
+}
+
+.MYwatch{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border-bottom: rgb(252, 193, 0) solid;
+
+    box-shadow: grey 0 5px 10px;
+}
+
+.IG{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border-bottom: rgb(252, 0, 105) solid;
+
+    box-shadow: grey 0 5px 10px;
+}
+
+.DCA{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border-bottom: rgb(0, 139, 252) solid;
+
+    box-shadow: grey 0 5px 10px;
+}
+
+.DVD{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border-bottom: rgb(252, 134, 0) solid;
+
+    box-shadow: grey 0 5px 10px;
+}
+
+/* =========================================
+   COLORS
+========================================= */
+
+.positive {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+
+.negative {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   LEARNING
+========================================= */
+
+.basiclearning-card{
+    border-top: 4px solid #59db31;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.strlearning-card{
+    border-top: 4px solid #3189db;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.UNlearning-card{
+    border-top: 4px solid #3ec8f1;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.Lrlearning-card{
+    border-top: 4px solid #f13e7a;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.FUlearning-card{
+    border-top: 4px solid #0f175f;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.TAlearning-card{
+    border-top: 4px solid #e43408;
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.learning-card .icon {
+    font-size: 35px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Yourcard{
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(15, 23, 42, 0.08);
+}
+
+.Yourcard:hover{
+    transition: 0.3s;
+    box-shadow:
+        0 5px 10px
+        rgb(255, 181, 21);
+}
+
+.progress {
+    background: #e2e8f0;
+
+    height: 9px;
+
+    border-radius: 10px;
+
+    margin-top: 15px;
+}
+
+
+.progress-bar {
+    background: #2563eb;
+
+    height: 100%;
+
+    width: 65%;
+
+    border-radius: 10px;
+}
+
+
+.progress-text {
+    margin-top: 10px;
+}
+
+
+
+/* =========================================
+   CALCULATOR
+========================================= */
+
+.calculator {
+    max-width: 500px;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(15, 23, 42, 0.08);
+}
+
+
+label {
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border:
+        1px solid #cbd5e1;
+
+    border-radius: 7px;
+}
+
+
+.result {
+    margin-top: 20px;
+
+    background: #eff6ff;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    color: #1e40af;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   WATCHLIST / INDICATORS
+========================================= */
+
+.indicator {
+    padding: 15px;
+
+    background: #f8fafc;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   NEWS
+========================================= */
+
+.news-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    border-left:
+        5px solid #f59e0b;
+    box-shadow: 0 5px 10px #f59e0b;
+}
+
+
+.news-category {
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   STOCK RESEARCH
+========================================= */
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+.search-box input {
+    flex: 1;
+}
+
+
+.stock-header {
+    background: linear-gradient(to right, #0010e9, #50b8f5);
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.stock-header h2 {
+    color: white;
+}
+
+
+.stock-industry {
+    color: #cbd5e1;
+}
+
+
+.stock-price {
+    font-size: 35px;
+
+    font-weight: bold;
+}
+
+
+.stock-positive {
+    color: #86efac;
+}
+
+
+.disclaimer {
+    background: #fff7ed;
+
+    border-left:
+        5px solid #f97316;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+    border-radius: 8px;
+}
+
+
+.disclaimer strong {
+    color: #c2410c;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #00123b;
+
+    color: #94a3b8;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+footer p {
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        text-align: center;
+    }
+
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+
+    .search-box {
+        flex-direction: column;
+    }
+
+}
